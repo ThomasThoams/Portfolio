@@ -67,7 +67,7 @@ const Edit = () => {
     };
 
     // On configure la requête
-    let req = new Request(`/edit/${id}`, {
+    let req = new Request(`/update/${id}`, {
       method: "POST",
       body: JSON.stringify(datas),
       headers: {

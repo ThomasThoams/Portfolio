@@ -35,6 +35,6 @@ router.get("/project/:id", Details);
 
 // Route pour editer un projet
 
-router.post("/edit/:id", Update);
+router.post("/update/:id", Update);
 
 export default router;

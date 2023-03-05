@@ -27,7 +27,7 @@ app.use(
 // Seulement une personne avec une session pourra accéder à ces routes
 app.use((req, res, next) => {
   let pathname = parseurl(req).pathname.split("/");
-  let protectedPath = ["addPost", "deletePost", "edit"];
+  let protectedPath = ["addPost", "deletePost", "update"];
   // Si la session isAdmin n'existe pas et que l'URL fait des parties des URL protégées
   if (!req.session.isAdmin && protectedPath.includes(pathname[1])) {
     // L'accès lui est interdit
