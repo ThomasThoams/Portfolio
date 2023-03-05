@@ -15,7 +15,7 @@ body {
 
 p{
 	/* On donne une taille de police générale aux paragraphes */
-	font-size: 1vmax;
+	font-size: 2vmax;
 }
 a{
 	/* On donne une taille de police générale aux liens */

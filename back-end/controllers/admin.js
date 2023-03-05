@@ -58,7 +58,7 @@ export const DeletePost = (req, res) => {
   });
 };
 
-// Requête api pour edtier un projet
+// Requête api pour editer un projet
 export const Update = (req, res) => {
   // On récupère l'id du projet à éditer dans le params
   let id = req.params.id;
