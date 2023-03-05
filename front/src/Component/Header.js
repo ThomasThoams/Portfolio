@@ -27,11 +27,13 @@ const Header = () => {
       pour se connecter, le lien github et le lien linkedin*/}
       {idUser.idUser === null || idUser.idUser === undefined ? (
         <div className="blog-headerDiv">
-          <img
-            src="https://res.cloudinary.com/dqkdjkmtc/image/upload/v1676975944/photo_2_nzxoh0.jpg"
-            alt="Thomas Miramont"
-            className="imgCV"
-          />
+          <div className="div-imgCV">
+            <img
+              src="https://res.cloudinary.com/dqkdjkmtc/image/upload/v1676975944/photo_2_nzxoh0.jpg"
+              alt="Thomas Miramont"
+              className="imgCV"
+            />
+          </div>
           <h1>Portfolio Thomas Miramont</h1>
           <nav>
             {/* Lien pour le homme/main*/}
