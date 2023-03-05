@@ -176,7 +176,7 @@ main form textarea {
 }
 .img-main{
 	/* On définit la taille de l'image des projets */
-	width: 50%;
+	width: 100%;
 }
 
 /********** PROJET ****/
@@ -214,7 +214,7 @@ main form textarea {
 
 .img-project{
 	/* On donne une taille à l'image */
-	width: 50%;
+	width: 80%;
 }
 
 /********** ADMIN ****/
@@ -289,11 +289,7 @@ td a{
 	}
 	
 
-	/************* PROJET *************/
-	/* Sur un plus petit écran on redimensione la taille de l'image */
-	.img-project{
-		width: 50%;
-	}
+
 }
 
 /* Si la largueur de l'écran est inférieur à 500px */
@@ -325,6 +321,7 @@ td a{
 		/* On enlève l'affichage de la colonne catégorie quand l'écran est trop petit */
 		display: none;
 	}
+
 }
 
 /* Si la largueur de l'écran est inférieur à 185px */
