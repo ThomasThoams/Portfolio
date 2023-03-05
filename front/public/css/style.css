@@ -149,11 +149,18 @@ main form textarea {
 }
 
 /********** HOME ****/
+li a{
+	font-size: 2em;
+}
 .home{
 	/* Avec flex on place le tout au milieu */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.home-list {
+	/* On enlève le padding de la liste des projets  */
+	padding: 0;
 }
 .home-list li {
 	/* On définit le style de la liste des project dans le home */
@@ -214,7 +221,7 @@ main form textarea {
 
 .img-project{
 	/* On donne une taille à l'image */
-	width: 80%;
+	width: 98%;
 }
 
 /********** ADMIN ****/
@@ -288,8 +295,6 @@ td a{
 		display: none;
 	}
 	
-
-
 }
 
 /* Si la largueur de l'écran est inférieur à 500px */
@@ -321,6 +326,7 @@ td a{
 		/* On enlève l'affichage de la colonne catégorie quand l'écran est trop petit */
 		display: none;
 	}
+
 
 }
 
