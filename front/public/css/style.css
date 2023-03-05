@@ -1,0 +1,343 @@
+/* css générale */
+
+body {
+	/* On définit une police général et un couleur de fond */
+	font-family: 'Roboto', sans-serif;
+	background-color: #E9F8F9;
+}
+
+#root {
+	/* On définit un flex column avec une height au root pour que le footer s'affiche en bas de la page */
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+p{
+	/* On donne une taille de police générale aux paragraphes */
+	font-size: 1vmax;
+}
+a{
+	/* On donne une taille de police générale aux liens */
+	font-size: 20px;
+}
+
+a:hover{
+	/* Au survol d'un lien on enlève la décoration ce qui va enlever le soulignement */
+	text-decoration: none;
+}
+.warning{
+	/* Tant que la page à une largeur supérieur à 185px on cache le message */
+	display: none;
+}
+
+/****** HEADER *******/
+
+.blog-headerDiv{
+	/* On utilise flex sur le header pour placer chaque élément */
+	display: flex;
+	justify-content: space-around;
+}
+.blog-header div {
+	/* On met une couleur de fond sur le header */
+	background-color: #181823;
+}
+.imgCV{
+	/* On modifie la taille de l'image et ses bordures */
+	width: 10%;
+	border-radius: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.blog-header h1{
+	/* On place le titre au centre*/
+	align-self: center;
+}
+
+.blog-header h1{
+	/* On donne une couleur de texte au h1 et une taille de police*/
+	color: white;
+	font-size: 2vmax;
+}
+
+.blog-header  nav {
+	/* On place la nav avec flex et un wrap pour le responsive */
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-header  nav a {
+	/* On donne une couleur un padding et une taille de police aux liens */
+	color: white;
+	margin: 1em;
+}
+
+
+/****** MAIN  *******/
+main {
+	/* On donne un padding au main */
+	padding: 3% 10%;
+	flex: 1;
+}
+
+main p {
+	/* On aligne le texte à gauche, on lui donne une taille et des marges*/
+	text-align: left;
+	margin:20px 0;
+}
+
+main h1 {
+	/* On donne un style au h1 avec une couleur, une taille de police, on lui donne un underline et le place au milieur*/
+	color: #9b9b9b;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 2vmax;
+}
+
+
+
+/********** FORM ******/
+
+
+main form {
+	/* on déifint le style du formulaire */
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	border: 3px solid #9b9b9b;
+	padding: 25px 50px;
+	border-radius: 50px;
+}
+
+main form label{
+	/* On définit le styles des labels du formulaires */
+	color:#9b9b9b;
+	text-decoration: underline;
+}
+
+main form input {
+	/* On définit le styles des inputs du formulaires */
+	display: block;
+	margin: 25px auto;
+	width: 70%;
+}
+
+main form textarea {
+	/* On définit le styles du textarea du formulaires */
+	display: block;
+	margin: 25px auto;
+	width: 70%;
+	min-height: 120px;
+	resize: vertical;
+}
+
+.submitBtn {
+	/* On définit le style des bouton */
+	height: 40px;
+	width: 50%;
+	background-color: #181823;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}
+
+.submitBtn:hover{
+	/* Au survol du bouton on lui ajoute un gradient */
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(24,24,35,1) 35%, rgba(3,139,167,1) 100%);
+}
+
+/********** HOME ****/
+.home{
+	/* Avec flex on place le tout au milieu */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.home-list li {
+	/* On définit le style de la liste des project dans le home */
+	text-align: left;
+	list-style: none;
+	margin: 30px 0;
+}
+
+.home-list li a {
+	/* On définit le style des liens de la liste des project dans le home */
+	display: block;
+	color: #537FE7;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.home-list li p {
+	/* On définit le style des textes de la liste des project dans le home */
+	text-align: left;
+}
+.img-main{
+	/* On définit la taille de l'image des projets */
+	width: 50%;
+}
+
+/********** PROJET ****/
+
+.projet-detail {
+	/* ON définit le style de la section */
+	text-align: center;
+	margin-bottom: 100px;
+	flex: 1;
+}
+
+.projet-detail h2 {
+	/* On déifinit le style du titre du projet */
+	color: #181823;
+	margin-bottom: 25px;
+}
+
+.projet-detail nav{
+	/* On ajoute un margin bottom à la nav pour la décoller de l'image */
+	margin-bottom: 25px;
+}
+
+.projet-detail nav a{
+	/* On définit le style du lien dans le projet */
+	color: #537FE7;
+	text-decoration: none;
+}
+
+.projet-detail p{
+	/* On définit un style au paragraphe de la section pour le placement */
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2%;
+}
+
+.img-project{
+	/* On donne une taille à l'image */
+	width: 50%;
+}
+
+/********** ADMIN ****/
+
+table {
+	/* On définit le style du tableau de la liste des projets côté admin */
+	margin: 50px auto;
+}
+
+table td, table th {
+	/* On définit le style du tableau (bordure et paddin) */
+	border: 1px solid #181823;
+	border-spacing: 0;
+	padding: 15px 25px;
+}
+td a{
+	color:#537FE7;
+}
+
+.back {
+	/* côté admin on définit la couleur du lien pour ajotuer un projet */
+	color: #537FE7;
+}
+
+.remove {
+	/* côté admin on définit la couleur de l'icone pour supprimer un projet */
+	color: red;
+}
+.edit{
+	color:green;
+}
+
+/********** FOOTER *************/
+
+.blog-footer {
+	/* On définit le style du footer */
+	background-color: #181823;
+	text-align: center;
+	padding: 25px;
+	color: white;
+}
+
+/* ---- RESPONSIVE ---- */
+
+/* Si la largueur de l'écran est inférieur à 800px */
+@media screen and (max-width: 800px) {
+
+	/* css générale */
+	p{
+		/* On donne une nouvelle taille générale aux paragraphe */
+		font-size: 15px;
+	}
+
+	/************* HEADER *************/
+	/* On enlève l'affichage de l'image quand l'écran est trop petit */
+	.imgCV{
+		display: none;
+	}
+	/* On passe l'affichge du header en colonne */
+	.blog-headerDiv{
+		flex-direction: column;
+	}
+	/* On place la nav au centre */
+	.blog-header nav{
+		align-self: center;
+	}
+
+	/************* ADMIN LIST *************/
+	/* On enlève une colonne du tableau pour qu'on puisse afficher le tableaux correctement */
+	.description{
+		display: none;
+	}
+	
+
+	/************* PROJET *************/
+	/* Sur un plus petit écran on redimensione la taille de l'image */
+	.img-project{
+		width: 50%;
+	}
+}
+
+/* Si la largueur de l'écran est inférieur à 500px */
+@media screen and (max-width: 500px) {
+	.submitBtn{
+		/* On change la taille du bouton et le font size pour que le texte ne déborde plus */
+		width: 100%;
+		font-size: 0.65em;
+	}
+}
+
+/* Si la largueur de l'écran est inférieur à 420px */
+@media screen and (max-width: 420px) {
+
+	.categorie{
+		/* On enlève l'affiche de la colonne catégorie quand l'écran est trop petit */
+		display: none;
+	}
+	.projectLink{
+		/* On donne une nouvelle police au lien dans le tableau */
+		font-size: 12px;
+	}
+}
+
+/* Si la largueur de l'écran est inférieur à 220px */
+@media screen and (max-width: 220px) {
+
+	.action{
+		/* On enlève l'affichage de la colonne catégorie quand l'écran est trop petit */
+		display: none;
+	}
+}
+
+/* Si la largueur de l'écran est inférieur à 185px */
+@media screen and (max-width: 185px) {
+	#root{
+		/* Le rendu n'est plus possible on arrête l'affichage du site */
+		display: none;
+	}
+	.warning{
+		/* On affiche un message "d'erreur" car la largueur de l'écran est trop petit pour faire un rendu du site*/
+		display: block;
+		color: red;
+		font-size: 20px;
+	}
+
+}
