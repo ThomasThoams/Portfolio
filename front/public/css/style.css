@@ -251,7 +251,7 @@ table td, table th {
 	/* On définit le style du tableau (bordure et paddin) */
 	border: 1px solid #181823;
 	border-spacing: 0;
-	padding: 0.9em 1.5;
+	padding: 0.9em 1.5em;
 }
 td a{
 	color:#537FE7;

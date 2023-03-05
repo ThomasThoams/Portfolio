@@ -69,11 +69,13 @@ const Header = () => {
       ) : (
         // Si l'utilisateur est connecté il doit avoir accès au lien pour le côté admin
         <div className="blog-headerDiv">
-          <img
-            src="https://res.cloudinary.com/dqkdjkmtc/image/upload/v1676975944/photo_2_nzxoh0.jpg"
-            alt="Thomas Miramont"
-            className="imgCV"
-          />
+          <div className="div-imgCV">
+            <img
+              src="https://res.cloudinary.com/dqkdjkmtc/image/upload/v1676975944/photo_2_nzxoh0.jpg"
+              alt="Thomas Miramont"
+              className="imgCV"
+            />
+          </div>
           <h1>Thomas Miramont</h1>
           <nav>
             {/* Lien pour le homme/main*/}
