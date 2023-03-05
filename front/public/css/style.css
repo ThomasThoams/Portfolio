@@ -45,7 +45,7 @@ a:hover{
 .imgCV{
 	/* On modifie la taille de l'image et ses bordures */
 	width: 100%;
-	border-radius: 20%;
+	border-radius: 20% 10%;
 }
 .blog-header h1{
 	/* On place le titre au centre*/
@@ -124,7 +124,7 @@ main form {
 	text-align: center;
 	border: 3px solid #9b9b9b;
 	padding: 1.5em 3.1em;
-	border-radius:50px;
+	border-radius:3.1em;
 }
 
 main form label{
@@ -156,7 +156,7 @@ main form textarea {
 	background-color: #181823;
 	color: white;
 	border: none;
-	border-radius: 10px;
+	border-radius: 0.6em;
 }
 
 .submitBtn:hover{
