@@ -87,13 +87,13 @@ const Edit = () => {
       <form>
         <div>
           {/* input pour le titre */}
-          <label>Titre</label>
+          <label htmlFor="title">Titre</label>
           <input type="text" id="title" value={title} onChange={handleChange} />
         </div>
 
         <div>
           {/* input pour la description */}
-          <label>Description du projet</label>
+          <label htmlFor="description">Description du projet</label>
           <textarea
             id="description"
             value={description}
@@ -104,7 +104,7 @@ const Edit = () => {
 
         <div>
           {/* input pour la categorie */}
-          <label>Catégorie</label>
+          <label htmlFor="category">Catégorie</label>
           <input
             type="text"
             id="category"
@@ -115,7 +115,7 @@ const Edit = () => {
 
         <div>
           {/* input pour le Github */}
-          <label>Github</label>
+          <label htmlFor="git">Github</label>
           <input type="text" id="git" value={git} onChange={handleChange} />
         </div>
         <div>
