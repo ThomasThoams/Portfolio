@@ -19,7 +19,7 @@ p{
 }
 a{
 	/* On donne une taille de police générale aux liens */
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 a:hover{
@@ -101,7 +101,7 @@ main {
 main p {
 	/* On aligne le texte à gauche, on lui donne une taille et des marges*/
 	text-align: left;
-	margin:20px 0;
+	margin:1.25em 0;
 }
 
 main h1 {
@@ -123,8 +123,8 @@ main form {
 	margin: auto;
 	text-align: center;
 	border: 3px solid #9b9b9b;
-	padding: 25px 50px;
-	border-radius: 50px;
+	padding: 1.5em 3.1em;
+	border-radius:50px;
 }
 
 main form label{
@@ -136,22 +136,22 @@ main form label{
 main form input {
 	/* On définit le styles des inputs du formulaires */
 	display: block;
-	margin: 25px auto;
+	margin: 1.5em auto;
 	width: 70%;
 }
 
 main form textarea {
 	/* On définit le styles du textarea du formulaires */
 	display: block;
-	margin: 25px auto;
+	margin: 1.5em auto;
 	width: 70%;
-	min-height: 120px;
+	min-height: 7.5em;
 	resize: vertical;
 }
 
 .submitBtn {
 	/* On définit le style des bouton */
-	height: 40px;
+	height: 2.5em;
 	width: 50%;
 	background-color: #181823;
 	color: white;
@@ -182,14 +182,14 @@ li a{
 	/* On définit le style de la liste des project dans le home */
 	text-align: left;
 	list-style: none;
-	margin: 30px 0;
+	margin: 1.8em 0;
 }
 
 .home-list li a {
 	/* On définit le style des liens de la liste des project dans le home */
 	display: block;
 	color: #537FE7;
-	margin-bottom: 10px;
+	margin-bottom: 0.6em;
 	text-align: left;
 }
 
@@ -207,19 +207,19 @@ li a{
 .projet-detail {
 	/* ON définit le style de la section */
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 6.25em;
 	flex: 1;
 }
 
 .projet-detail h2 {
 	/* On déifinit le style du titre du projet */
 	color: #181823;
-	margin-bottom: 25px;
+	margin-bottom: 1.5em;
 }
 
 .projet-detail nav{
 	/* On ajoute un margin bottom à la nav pour la décoller de l'image */
-	margin-bottom: 25px;
+	margin-bottom: 1.5em;
 }
 
 .projet-detail nav a{
@@ -244,14 +244,14 @@ li a{
 
 table {
 	/* On définit le style du tableau de la liste des projets côté admin */
-	margin: 50px auto;
+	margin: 3.1em auto;
 }
 
 table td, table th {
 	/* On définit le style du tableau (bordure et paddin) */
 	border: 1px solid #181823;
 	border-spacing: 0;
-	padding: 15px 25px;
+	padding: 0.9em 1.5;
 }
 td a{
 	color:#537FE7;
@@ -276,7 +276,7 @@ td a{
 	/* On définit le style du footer */
 	background-color: #181823;
 	text-align: center;
-	padding: 25px;
+	padding: 1.5em;
 	color: white;
 }
 
@@ -288,7 +288,7 @@ td a{
 	/* css générale */
 	p{
 		/* On donne une nouvelle taille générale aux paragraphe */
-		font-size: 15px;
+		font-size: 0.9em;
 	}
 
 	/************* HEADER *************/
@@ -336,7 +336,7 @@ td a{
 	}
 	.projectLink{
 		/* On donne une nouvelle police au lien dans le tableau */
-		font-size: 12px;
+		font-size: 0.75em;
 	}
 }
 
@@ -361,7 +361,7 @@ td a{
 		/* On affiche un message "d'erreur" car la largueur de l'écran est trop petit pour faire un rendu du site*/
 		display: block;
 		color: red;
-		font-size: 20px;
+		font-size: 1.25em;
 	}
 
 }
