@@ -17,6 +17,3 @@ Rendez vous avec le terminal dans le dossier "frontend", lancez un npm i.
 Identifiant : admin@admin.fr
 Mot de passe : thomas
 
-# Update
-
-Le update est fait back-end>controllers>admin.js ligne 62
